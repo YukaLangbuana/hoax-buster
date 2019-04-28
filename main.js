@@ -10,6 +10,11 @@ $(document).ready(function(){
     };
 
     $('#submitNews').on('click', function(){
+        
+        if (JSON.stringify($('#news-input').val().replace(/\n/g, "")).length < 100){
+            alert("Daripada masukin satu kaliamat/potongan berita, coba masukin berita penuhnya!")
+            location.reload();
+        }
 
         $.ajax({
             type: "POST",
