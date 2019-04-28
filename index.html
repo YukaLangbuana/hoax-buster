@@ -1,0 +1,88 @@
+<html>
+
+    <head>
+        <title>Bener Gak Sih? | Analisa kebenaran berita</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="/main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+    </head>
+
+    <body>
+        <div class="content">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="wrapper">
+                        <div class="headers">
+                            <h1 class="title">BENER GAK SIH?</h1>
+                            <p>Analisa kebeneran berita</p>
+                            <a href="#faqExampleModalCenter" data-toggle="modal" data-target="#faqExampleModalCenter">F.A.Q</a>
+                        </div><br>
+                        <div class="row">
+                            <div class="col-sm-2"></div>
+                            <div class="col-sm-8">
+                                <div class="form-group">
+                                    <textarea class="form-control" id="news-input" rows="12" placeholder="Masukin beritanya disini.." autocomplete="false"></textarea>
+                                </div>
+                                <button type="button" class="btn btn-primary btn-lg btn-block" id="submitNews" data-toggle="modal" data-target="#exampleModalCenter">Bener Gak Sih..</button>
+                            </div>
+                            <div class="col-sm-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Bener gak sih?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                      
+                    </div>
+                    <div class="modal-footer">
+                        <div>
+                            <span style="text-align:left">Benar tidak prediksinya?</span>
+                        </div>
+                        <button type="button" class="btn btn-success" id="benar">Benar</button>
+                        <button type="button" class="btn btn-danger" id="salah">Salah</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="faqExampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">F.A.Q</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                      <p style="font-weight: bold">1. Apa ini?</p>
+                      <p><i>Bener gak sih</i>  adalah alat untuk memeriksa kebenaran berita yang beredar di sekeliling kita</p>
+                      <p style="font-weight: bold">2. Bagaimana cara kerjanya?</p>
+                      <p><i>Bener gak sih</i>  menggunakan <i>machine learning</i> dimana kita mempelajari lebih dari 17.000 artikel berita yang ada di internet sebagai sumber.</p>
+                      <p style="font-weight: bold">3. Apa yang dikategorikan?</p>
+                      <p>Kita mengkategorikan dua hal: Berita faktual & Kurang Faktual. <b>Berita faktual</b> berarti berita-nya bisa dipertanggung-jawabkan dan berasal dari sumber yang terpercaya. <b>Kurang faktual</b> berarti berita yang diberikan patut dipertanyakan kebenarannya dan harus diperiksa lagi sumbernya.</p>
+                      <p style="font-weight: bold">4. Salah nih prediksinya</p>
+                      <p>Ampun bang, sistemnya belum sepenuhnya akurat. Silahkan klik tombol dibawah hasil prediksi untuk memberikan umpan balik anda. Sistem ini akan memperbaharui algoritmanya setiap 2 minggu.</p>
+                      <p style="font-weight: bold">5. Siapa yang buat?</p>
+                      <p>Me! <a href="https://github.com/YukaLangbuana">@YukaLangbuana</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
