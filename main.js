@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    var database_url = "http://localhost:5000/api/predict";
+    var database_url = "http://syahbandar-osiris.herokuapp.com/api/predict";
 
     String.prototype.format = function () {
         var i = 0, args = arguments;
