@@ -11,6 +11,15 @@
     </head>
 
     <body>
+        <script type='text/javascript'>
+        $.ajax({
+            type: "GET",
+            contentType: "application/json",
+            url: "http://syahbandar-osiris.herokuapp.com/api/predict",
+            complete: function (data) {
+            }
+        });
+        </script>
         <div class="content">
             <div class="row">
                 <div class="col-sm-12">
